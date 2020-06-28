@@ -19,7 +19,7 @@ const createWindow = () => {
     //مێسۆدی هەنگاوی کۆتای بۆ کلیک کردن لە بەتنی ڕیگیستێر
 async function registeration(){
   try{
-    var msg = await document.querySelector('.msg').children[0].innerText;
+  var msg =  document.querySelector('.msg').children[0].innerText;
     //بانگ کردنەوەی مێسۆدی ریکوێست و ناردنی داتاکان بۆ سێرڤەرەکەمان
   const reslt = await httpPostReq('POST','http://localhost:5000',{
      "name":name,
@@ -33,7 +33,8 @@ async function registeration(){
      buutonReg.click();
 
   }catch(err){
-    
+    var buutonReg = document.querySelector('.btn');
+    buutonReg.click();
   }
 }
 
