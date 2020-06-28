@@ -1,16 +1,21 @@
 
+//مێسۆدی هەنگاوی کۆتای بۆ کلیک کردن لە بەتنی ڕیگیستێر
 async function registeration(){
+    //بانگ کردنەوەی مێسۆدی ریکوێست و ناردنی داتاکان بۆ سێرڤەرەکەمان
   const reslt = await httpPostReq('POST','http://localhost:5000',{
      "name":name,
      "pass":pass
    }).then(responseData =>{
      
    })
+      //clikc() دیاری کردنی بەتنی تۆمار بوون و دروستکردنی فەنکشنی 
      var buutonReg = document.querySelector('.btn');
      buutonReg.click();
  }
  
+ //ناردنی ڕیکوێست بۆ لۆکاڵ سێرڤەرەکەمان بۆ تۆمار کردنی ناو و پاسۆردەکان لە فایلی جەیسۆنا
  const httpPostReq = (method, url,data) => {
+     // بۆ ئەوەی تاکوو داتاکە تۆمار نەبێت نەچێتە هەنگاوی دواتر  promise   بەکار هێنانی
    const promise = new Promise((resolve,reject)=>{
        const httpXhr = new XMLHttpRequest();
        httpXhr.open(method,url);
@@ -26,7 +31,7 @@ async function registeration(){
  
  function randomName(lengthname){
    var name='';
- 
+   //ئەو کارەکتەرانەی ئەمانەوێت لە ناوەکەیا هەبێت
    let nameExp ='qwertyuiopasdfghjklzxcvbnm';
    for(var i =0 ; i<lengthname;i++){
      name += nameExp.charAt(Math.floor(Math.random() * nameExp.length))
@@ -37,6 +42,7 @@ async function registeration(){
  
  }
  
+ //مێسۆدی دروست کردنی پاسۆرد
  function randomPass(lengthPass){
    var pass='';
    let passExp ='qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890!@#$%^&*()';
@@ -49,8 +55,9 @@ async function registeration(){
  }
  
  
- 
+ //دروست کردنی پاسۆردی ڕاندۆمی
    var pass =  randomPass(10);
+   //دروست کردنی ناوێکی ڕاندۆمی 
    var name =  randomName(10);
  function setInputValues(){
    var nameInput =  document.querySelectorAll('.form-control');
@@ -152,8 +159,6 @@ async function registeration(){
  
  findOperators();
  
- 
- // console.log(res)
  
  
  
