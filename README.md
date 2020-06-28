@@ -1,12 +1,23 @@
 # Challenge_CAPTCHA-
 Cyber Shield Challenge Using Javascript server use nodejs $ express  Deasktop use electronjs
 
-زمان و لایبرەری بەکارهاتوو#
-#javascipt زمانی 
-  #بۆ دروستکردنی سێرڤەری هەڵگرتنی داتاکان nodejs & expressjs 
+
+
+زمان و لایبرەری بەکارهاتوو
+
+
+javascipt زمانی 
+
+
+ بۆ دروستکردنی سێرڤەری هەڵگرتنی داتاکان nodejs & expressjs 
+
+
+
 بۆ دیسکتۆپ ئەپلیکیشن و ڕەنکردنی سکریتەکەمان لەسەرە وێبسایتەکە Electron Js  
 
 هەنگاوەکان 
+
+
 ١-دیاریکردنی ئینپوت فیڵدەکان 
 
 ٢-دیاریکردنی ئینپوتی ناو و وشەی نهێنی
@@ -26,6 +37,8 @@ Cyber Shield Challenge Using Javascript server use nodejs $ express  Deasktop us
   ٩- چالاک کردنی بەتنی تۆماربوون
 
  Json ١٠- ناردنی ناو و پاسۆرد بۆ سێرڤەرەکەمان و تۆمار کردنی لە فایلێکی
+
+
 
 
 
